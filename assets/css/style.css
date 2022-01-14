@@ -1,15 +1,22 @@
 /*  ====================
   Imported stylesheets
 ====================  */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/*  ===============
+Custom Properties 
+===============  */
 
 :root {
 	--main-color: #3a3a3a;
 	--secondary-color: #8d3daf;
 }
+
 /*  ============= 
   Common styles
 =============  */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -20,9 +27,11 @@
 	margin: 0 auto 80px;
 	padding: 0 20px;
 }
+
 /*  ================
   Navigation sytle 
 ================  */
+
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -49,9 +58,11 @@ nav {
 .navbar img {
 	width: 36px;
 }
+
 /*  ================
   Top Banner style 
 ================  */
+
 .top-banner {
 	display: flex;
 	justify-content: center;
@@ -118,4 +129,21 @@ nav {
 }
 .top-banner:hover #top-heading-animation {
 	animation: typing 3s ease infinite;
+}
+
+/*  ==============================
+  Top Online platform Logo style 
+==============================  */
+
+.company-logos {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 30px;
+	width: 1000px;
+	margin: 0 auto;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	border-image: linear-gradient(90deg, #8d3daf1a, #8d3daf99, #8d3daf1a);
+	border-image-slice: 1;
 }
