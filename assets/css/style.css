@@ -2,6 +2,11 @@
   Imported stylesheets
 ====================  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+:root {
+	--main-color: #3a3a3a;
+	--secondary-color: #ff7f50;
+}
 /*  ============= 
   Common styles
 =============  */
@@ -12,7 +17,8 @@
 }
 .container {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 0 auto 80px;
+	padding: 0 20px;
 }
 /*  ================
   Navigation sytle 
@@ -26,7 +32,7 @@ nav {
 .nav-title {
 	font-size: 24px;
 	font-weight: 700;
-	color: #3a3a3a;
+	color: var(--main-color);
 }
 .navbar ul {
 	list-style-type: none;
@@ -37,9 +43,81 @@ nav {
 	text-decoration: none;
 	font-size: 16px;
 	font-weight: 600;
-	color: #3a3a3a;
+	color: var(--main-color);
 	padding: 15px;
 }
 .navbar img {
 	width: 36px;
+}
+/*  ================
+  Top Banner style 
+================  */
+.top-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner-info {
+	flex: 3;
+	margin-right: 50px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+.banner-title {
+	font-size: 52px;
+	color: var(--main-color);
+}
+.banner-writting {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--main-color);
+}
+.banner-button {
+	width: fit-content;
+}
+.banner-button {
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 10px 20px;
+	background-color: #ffffff;
+	color: var(--secondary-color);
+	border: 3px solid var(--secondary-color);
+	border-radius: 10px;
+	cursor: pointer;
+}
+.banner-button:hover {
+	background-color: var(--secondary-color);
+	color: #ffffff;
+}
+.banner-picture {
+	flex: 2;
+	margin-left: 50px;
+	position: relative;
+}
+.banner-image {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+@keyframes typing {
+	0% {
+		color: var(--main-color);
+	}
+	25% {
+		color: #ffffff;
+	}
+	50% {
+		color: var(--secondary-color);
+	}
+	75% {
+		color: #ffffff;
+	}
+	100% {
+		color: var(--main-color);
+	}
+}
+.top-banner:hover #top-heading-animation {
+	animation: typing 3s ease infinite;
 }
