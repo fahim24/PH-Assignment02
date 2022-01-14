@@ -1,0 +1,45 @@
+/*  ====================
+  Imported stylesheets
+====================  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/*  ============= 
+  Common styles
+=============  */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/*  ================
+  Navigation sytle 
+================  */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+.nav-title {
+	font-size: 24px;
+	font-weight: 700;
+	color: #3a3a3a;
+}
+.navbar ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+.navbar a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #3a3a3a;
+	padding: 15px;
+}
+.navbar img {
+	width: 36px;
+}
