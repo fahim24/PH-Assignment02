@@ -151,12 +151,18 @@ nav {
 /*  ====================== 
 Popular Collection Items 
 ======================  */
+.product-banner {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
 .title {
 	font-size: 28px;
 	font-weight: 700;
 	color: var(--main-color);
 	text-align: center;
 	padding: 30px 0;
+	position: relative;
 }
 .products {
 	display: grid;
@@ -165,6 +171,7 @@ Popular Collection Items
 	gap: 30px;
 	width: 80%;
 	margin: 0 auto;
+	position: relative;
 }
 .product {
 	display: flex;
@@ -197,4 +204,18 @@ Popular Collection Items
 	font-size: 14px;
 	font-weight: bold;
 	color: #787885;
+}
+div > .button {
+	position: absolute;
+	right: 0;
+	margin: 20px 80px;
+}
+.button {
+	text-decoration: none;
+	border: none;
+	font-size: 16px;
+	background-color: #ffffff;
+	color: var(--secondary-color);
+	width: fit-content;
+	cursor: pointer;
 }
