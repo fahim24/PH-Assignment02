@@ -340,6 +340,7 @@ footer {
 	}
 	.navbar ul {
 		position: absolute;
+		flex-wrap: wrap;
 		top: 80px;
 		left: 0;
 		width: 100%;
