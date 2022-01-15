@@ -58,6 +58,9 @@ nav {
 .navbar img {
 	width: 36px;
 }
+.navbar li:hover > a {
+	color: var(--secondary-color);
+}
 
 /*  ================
   Top Banner style 
@@ -208,7 +211,7 @@ Popular Collection Items
 div > .button {
 	position: absolute;
 	right: 0;
-	margin: 20px 80px;
+	margin: 30px 80px;
 }
 .button {
 	text-decoration: none;
@@ -218,4 +221,46 @@ div > .button {
 	color: var(--secondary-color);
 	width: fit-content;
 	cursor: pointer;
+}
+
+/*  ============    
+  footer sryle
+============  */
+
+footer {
+	background-color: #0a0826;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.footer-title {
+	font-size: 24px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.footer-info {
+	font-size: 14px;
+	color: #ffffff;
+}
+.fab {
+	padding: 5px;
+	font-size: 18px;
+	width: 24px;
+	text-align: center;
+	text-decoration: none;
+	margin: 10px 3px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.fab:hover {
+	opacity: 0.7;
+}
+.fa-facebook-f,
+.fa-linkedin-in,
+.fa-github,
+.fa-youtube {
+	background: #ffffff1a;
+	color: #ffffff;
 }
